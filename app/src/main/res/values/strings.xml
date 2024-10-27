@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bottomnavbartugas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_1">Home</string>
+    <string name="text_2">Mutasi</string>
+    <string name="text_3">Inbox</string>
+    <string name="text_4">Profile</string>
+</resources>

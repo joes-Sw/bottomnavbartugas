@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Selamat Malam, Joe" />
+
+    <ImageView
+        android:id="@+id/imgbni"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/greetings"
+        android:src="@drawable/logo_bank_bri"/>
+
+    <TextView
+        android:id="@+id/saldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgbni"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignStart="@id/imgbni"
+        android:text="Saldo"/>
+
+    <ImageView
+        android:id="@+id/prgoress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saldo"
+        android:src="@drawable/progress_bar"/>
+    <ImageView
+        android:id="@+id/prgoress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saldo"
+        android:src="@drawable/progress_bar2"/>
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/prgoress"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/button_1"/>
+
+    <TextView
+        android:id="@+id/text_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@id/content"
+        android:layout_marginStart="15dp"
+        android:text="Joe Sozanolo Wuu"
+        android:layout_below="@id/prgoress"/>
+
+    <TextView
+        android:id="@+id/taplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_nama"
+        android:layout_alignStart="@id/text_nama"
+        android:text="BNI Taplus Muda | 7263-2938-2390-****"/>
+    
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/text_nama"
+        android:layout_alignEnd="@id/taplus"
+        android:layout_marginEnd="-20dp"
+        android:src="@drawable/baseline_keyboard_arrow_down"/>
+    
+    <ImageView
+        android:id="@+id/copy"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/prgoress"
+        android:layout_alignEnd="@id/text_nama"
+        android:layout_marginEnd="-230dp"
+        android:src="@drawable/copy"/>
+
+    <TextView
+        android:id="@+id/saldo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/taplus"
+        android:layout_alignStart="@id/taplus"
+        android:text="Rp ********"/>
+
+    <ImageView
+        android:id="@+id/imgmata"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/taplus"
+        android:layout_alignEnd="@id/taplus"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/baseline_visibility_off"/>
+
+    <LinearLayout
+        android:id="@+id/btn_tunai"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgmata"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/taplus">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="Tarik Tunai"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/orange"
+            android:text="Setor Tunai"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_tunai"
+        android:layout_alignStart="@id/saldo"
+        android:text="My Shortcut"/>
+
+<LinearLayout
+    android:id="@+id/uangdanva"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/shortcut"
+    android:layout_alignStart="@id/shortcut">
+
+<!--    <Button-->
+<!--        android:id="@+id/imgtf"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/shortcut"-->
+<!--        android:layout_alignStart="@id/shortcut"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:text="Transfer Uang"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:drawableLeft="@drawable/transfer_1"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imgtf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:text="Transfer Uang"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/transfer_1"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/shortcut"-->
+<!--        android:layout_alignStart="@id/shortcut"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:text="Virtual Account"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:drawableLeft="@drawable/group_7"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/imgtf"-->
+<!--        android:layout_alignStart="@id/imgtf"-->
+<!--        android:layout_marginTop="-37dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:text="Transfer Uang"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imgva"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:text="Virtual Account"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/group_7"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pulsadanmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/uangdanva">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imgpulsa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:text="Pulsa / Data"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/transfer_3"/>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:drawableLeft="@drawable/transfer_3"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="Menu Lengkap"/>-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imgmenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:text="Menu Lengkap"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/transfer_4"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/insight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/pulsadanmenu"
+        android:layout_marginTop="20dp"
+        android:text="Insight BNI"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/insight">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:src="@drawable/rectangle_47"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:src="@drawable/rectangle_48"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:src="@drawable/rectangle_49"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
